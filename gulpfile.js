@@ -29,7 +29,7 @@ function pug() {
 function scss() {
   const plugins = [autoprefixer(), mediaquery(), cssnano()];
   return gulp
-    .src("src/**/*.scss")
+    .src("src/layouts/default.scss")
     .pipe(sass())
     .pipe(concat("bundle.css"))
     .pipe(postcss(plugins))
